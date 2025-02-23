@@ -1,0 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("Moviespear website loaded successfully!");
+
+    const movieButtons = document.querySelectorAll(".movie-buttons a");
+    movieButtons.forEach(button => {
+        button.addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("This is a demo link. Functionality can be added later.");
+        });
+    });
+});
